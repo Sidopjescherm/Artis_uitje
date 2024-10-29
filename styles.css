@@ -82,14 +82,19 @@ footer{
     /*Kleur en stijl*/
     display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    position: relative;
-     top: -30rem;
 }
 
 ul{
     list-style: none;
+    display: flex;
+}
+
+ul li{
+    display: flex;
+     flex-grow: 1;
+     justify-content:flex-start;
 }
 
 ul:nth-last-of-type(1){
@@ -101,5 +106,5 @@ ul:nth-last-of-type(2){
 }
 
 ul:nth-last-of-type(3){
-    grid-column-start: 3;
+    grid-row-start: 1;
 }
