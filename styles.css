@@ -1,6 +1,7 @@
 body{
     font-family:Geneva;
-    width: 100%
+    width: 100%;
+    margin: 0;
 }
 
 nav{
@@ -9,21 +10,10 @@ nav{
      gap: 1rem;
 
     /*positie*/
-    position: relative;
-     top: -1em;
+    position: sticky;
     z-index: 10;
     /*hoogte*/
     height: 3em; 
-    
-    img{
-        position: relative;
-         top: 1em;
-    }
-
-    a{
-        position: relative;
-         top: 1em;
-    }
 }
 
 
@@ -32,8 +22,6 @@ section{
      grid-template-columns: 1fr 4fr 1fr;
      grid-template-rows: 1fr 1fr 1fr;
 
-     position: relative;
-      top: 1.5em;
 
     z-index: 2;
 }
@@ -45,17 +33,30 @@ header{
 
     /*positie*/
     position: relative;
-     top: -2.5em;
      grid-column-start: 2;
 
-     text-align: center;
-     place-content: center;
+     text-align: left;
+     place-content: left;
 
     display: grid;
      grid-template-rows: 2fr 1fr 1fr 1fr;
 
      /*text aanpassingen*/
      font-size: x-large;
+
+     a{
+        position: relative;
+         left: 20px;
+     }
+
+     a:hover{
+        
+     }
+
+     h1{
+        position: relative;
+         left: 20px;
+     }
 }
 
 main{
@@ -65,7 +66,6 @@ main{
     grid-column-start: 2;
 
     position: relative;
-     top: -2em;
 }
 
 article{
@@ -85,7 +85,7 @@ footer{
      grid-template-rows: 1fr 1fr 1fr;
 
     position: relative;
-     top: 140m
+     top: -30rem;
 }
 
 ul{
