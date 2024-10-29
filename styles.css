@@ -6,28 +6,6 @@ body{
 
 nav{
     background-color: green;
-    display: flex;
-     gap: 1rem;
-
-    /*positie*/
-    position: sticky;
-    z-index: 10;
-    /*hoogte*/ 
-
-    ul{
-        display: flex;
-         flex-grow: 1;
-    }
-
-    li{
-        flex-grow:1;
-        justify-content: center;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
 }
 
 
@@ -62,11 +40,6 @@ header{
         position: relative;
          left: 20px;
      }
-
-     a:hover{
-        
-     }
-
      h1{
         position: relative;
          left: 20px;
