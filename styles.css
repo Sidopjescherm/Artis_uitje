@@ -1,0 +1,78 @@
+body{
+    font-family:Geneva;
+    width: 100%;
+}
+
+nav{
+    background-color: green;
+    display: flex;
+     gap: 1rem;
+
+    /*positie*/
+    position: sticky;
+     top:0;
+
+    z-index: 10;
+    /*hoogte*/
+}
+
+section{
+    display: grid;
+     grid-template-columns: 1fr 4fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+
+     position: relative;
+      top: 1.5em;
+
+    z-index: 2;
+}
+
+header{
+    background-color: chartreuse;
+     background-size: contain;
+    height: 20em;
+
+    /*positie*/
+    position: relative;
+     top: -2.5em;
+     grid-column-start: 2;
+
+     text-align: center;
+     place-content: center;
+
+    display: grid;
+     grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+main{
+    background-color: aqua;
+    height: 1em;
+    /*positie en grids*/
+    grid-column-start: 2;
+
+    position: relative;
+     top: -2em;
+}
+
+article{
+    background-color: sienna;
+    text-align: center;
+    place-content: center;
+
+   display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+footer{
+    background-color: gold;
+    /*Kleur en stijl*/
+    display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+
+     z-index: 2;
+}
+
+ul{
+    list-style: none;
+}
