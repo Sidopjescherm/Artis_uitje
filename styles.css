@@ -1,88 +1,71 @@
 body{
-    font-family:Geneva;
-    width: 100%;
     margin: 0;
+    a{
+        text-decoration: none;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    H1{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    H2{
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
 
 nav{
-    background-color: green;
-}
-
-
-section{
-    display: grid;
-     grid-template-columns: 1fr 4fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
-
-
-    z-index: 2;
-}
-
-header{
-    background-color: chartreuse;
-     background-size: contain;
-    height: 20em;
-
-    /*positie*/
-    position: relative;
-     grid-column-start: 2;
-
-     text-align: left;
-     place-content: left;
-
-    display: grid;
-     grid-template-rows: 2fr 1fr 1fr 1fr;
-
-     /*text aanpassingen*/
-     font-size: x-large;
-
-     a{
-        position: relative;
-         left: 20px;
-     }
-     h1{
-        position: relative;
-         left: 20px;
-     }
-}
-
-main{
-    background-color: aqua;
-    height: 1em;
-    /*positie en grids*/
-    grid-column-start: 2;
+    background-color: antiquewhite;
 
     position: relative;
-}
+     top: -1em;
+     display: flex;
 
-article{
-    background-color: sienna;
-    text-align: center;
-    place-content: center;
-
-   display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-footer{
-    background-color: gold;
-    /*Kleur en stijl*/
-    display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr 1fr 1fr;
+     ul{
+        align-items: center;
+     }
 }
 
 ul{
     list-style: none;
-}
-ul:nth-last-of-type(1){
-    grid-row-start: 1;
-}
-
-ul:nth-last-of-type(2){
-    grid-row-start: 1;
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-ul:nth-last-of-type(3){
-    grid-row-start: 1;
+section{
+    background-color: #F0F0EC;
+
+    article:nth-of-type(1){
+        background-color: #C5E3BE;
+        color: #001e07;
+    }
+    
+    article:nth-of-type(2){
+        background-color: white;
+    }
+    
+    article:nth-of-type(3){
+        background-color: #202020;
+        color: white;
+    }
+}
+
+header{
+    background-color: #001e07;
+    color: white;
+    display: grid;
+    
+    h1{
+        font-size: 3em;
+    }
+    a{
+        color: white;
+    }
+}
+
+footer{
+    display: grid;
+    text-align: center;
 }
