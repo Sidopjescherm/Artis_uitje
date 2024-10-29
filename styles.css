@@ -12,8 +12,22 @@ nav{
     /*positie*/
     position: sticky;
     z-index: 10;
-    /*hoogte*/
-    height: 3em; 
+    /*hoogte*/ 
+
+    ul{
+        display: flex;
+         flex-grow: 1;
+    }
+
+    li{
+        flex-grow:1;
+        justify-content: center;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
 
@@ -83,20 +97,11 @@ footer{
     display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr 1fr 1fr 1fr;
-
 }
 
 ul{
     list-style: none;
-    display: flex;
 }
-
-ul li{
-    display: flex;
-     flex-grow: 1;
-     justify-content:flex-start;
-}
-
 ul:nth-last-of-type(1){
     grid-row-start: 1;
 }
