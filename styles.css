@@ -19,12 +19,19 @@ nav{
 
     position: relative;
      top: -1em;
-     display: flex;
 
      ul{
         align-items: center;
+        display: flex;
+     }
+     a{
+        color: black;
+        font-size: 15pt;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;    
      }
 }
+
 
 ul{
     list-style: none;
@@ -36,6 +43,7 @@ ul{
 
 section{
     background-color: #F0F0EC;
+    gap: 3em;
 
     article:nth-of-type(1){
         background-color: #C5E3BE;
@@ -55,17 +63,77 @@ section{
 header{
     background-color: #001e07;
     color: white;
-    display: grid;
     
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+
+    height: 25rem;
+
     h1{
         font-size: 3em;
+        position: relative;
+        left: 20px;
+
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
     a{
         color: white;
+        position: relative;
+        left: 20px;
+
+        font-size: 24pt;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
     }
+}
+
+a:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.bus{
+    grid-column-start: 3;
+}
+
+a:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.cam{
+    grid-column-start: 3;
+}
+
+a:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+}
+
+.map{
+    grid-column-start: 3;
+}
+
+
+article{
+    display: flex;
+    text-align: center;
+    border-radius: 1em;
+    margin: 3em;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    padding: 2em;
 }
 
 footer{
     display: grid;
     text-align: center;
+    background-color: #001e07;
+    color: white;
 }
