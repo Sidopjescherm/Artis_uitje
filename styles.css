@@ -71,7 +71,7 @@ header{
     height: 25rem;
 
     h1{
-        font-size: 3em;
+        font-size: 33pt;
         position: relative;
         left: 20px;
 
@@ -136,4 +136,18 @@ footer{
     text-align: center;
     background-color: #001e07;
     color: white;
+}
+
+@media (min-width: 750px) and (max-width: 1024px){
+    section{
+        background-color: black;
+
+        
+    }
+}
+
+@media (min-width: 1024px){
+    h1{
+        color: aqua;
+    }
 }
